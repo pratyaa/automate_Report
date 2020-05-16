@@ -1,28 +1,30 @@
 import React,{Component} from 'react';
-import ReactDOM from 'react-dom';
+import {Card,CardText} from 'reactstrap';
 import './form.css'
 
 class Form extends Component {
 	constructor()
 	{
 		super();
-		this.state={Addressed_Authority:"Addressed Authority",Department:"Department",Location:"Location",Date:"Date",Subject:"Subject",
-		Content:"---Content----",Name:"Name",Designation:"Designation"};
+
+
+		this.state={Date:"Date",Audience:"Audience",Topic:"Topic",Date_of_event:"Date_of_event",Time:"Time",Venue:"Venue"};
+
+		
 
 		this.handleChange = this.handleChange.bind(this);
 	}
 
-	handleChange=(event)=>{
+	handleChange=(event)=>
+	{
+
 		var x =event.target.name;
 		if(event.target.value)
 		this.setState({[x]:event.target.value});
 	    else
 	    	this.setState({[x]:[x]})
 
-		
 	}
-
-	
 
 	render()
 	{
@@ -33,55 +35,70 @@ class Form extends Component {
 
 			 
             <div className="forms"> 
+            <h3>Enter details of application</h3>
 			 <form>
-					 <p> Addressed To :</p>
-					   <input type="text" onChange={this.handleChange} name="Addressed_Authority"/>
-					 <br/>
-					 <p> Department :</p>
-					 <input type="text" onChange={this.handleChange} name="Department" />
-					 <br/>
-					  <p> Location:</p>
-					 <input type="text" onChange={this.handleChange} name="Location" />
-					 <br/>
+					
+					 
 					  <p> Date:</p>
 					 <input type="date" onChange={this.handleChange} name="Date" />
 					 <br/>
-					  <p> Subject:</p>
-					 <textarea onChange={this.handleChange} name="Subject" />
-					 <br/>
-					 <p> Content:</p>
-					 <textarea onChange={this.handleChange} name="Content" />
-					 <br/>
-					 <p> Name:</p>
-					 <input type="text" onChange={this.handleChange} name="Name" />
+					 
+					 <p> Audience:</p>
+					 <input type="text" onChange={this.handleChange} name="Audience" />
 					<br/>
-					 <p> Designation:</p>
-					 <input type="text" onChange={this.handleChange} name="Designation" />
+					 <p> Topic:</p>
+					 <input type="text" onChange={this.handleChange} name="Topic" />
+					 <br/>
+					 <p> Date_of_event:</p>
+					 <input type="date" onChange={this.handleChange} name="Date_of_event" />
+					 <br/>
+					 <p> Venue:</p>
+					 <input type="text" onChange={this.handleChange} name="Venue" />
 					 <br/>
 			   
 			  </form>
 			 </div>
-
+			 <div>
+			 <h3>Preview</h3>
+			 <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
 			  <div className="preview">
-				 <p>To</p>
+
+				 <CardText>To</CardText>
 				 
-				  <p> {this.state.Addressed_Authority}</p>
-
-
-				 <p> {this.state.Department}</p>
-				 <p>{this.state.Location}</p>
+				 <CardText> Head of Department</CardText>
+				 <CardText> Information Technology</CardText>
+				 <CardText>SGSITS,Indore</CardText>
 				 <br/>
-				 <p>Date :{this.state.Date}</p>
-				 <p>Subject: {this.state.Subject}</p>
-				 <p>Respected Sir/Ma'am </p>
-				 <p style={{height:"100px"}}>{this.state.Content}</p>
-				 <p>{this.state.Name}</p>
-				 <p>{this.state.Designation}</p>
+				
+				 
+				 <CardText>
+				 Date :{{this.state.Date}==="Date" ? <span className="light">{this.state.Date}</span> : <span>{this.state.Date}</span>}
+				 </CardText>
+				 
+
+
+
+				 <br/>
+				 <CardText>Subject: Persmission for #inlcude sessions</CardText>
+				 <CardText>Respected Ma'am </CardText>
+				 <CardText>We at #include are planning a session for {this.state.Audience}. The session will be based on {this.state.Topic}.
+ 					We would like to seek your permission to allow us to conduct session on following date, time and venue.</CardText>
+
+				   <CardText>	Date: {this.state.Date_of_event}</CardText>
+					<CardText>Time: {this.state.Time}</CardText>
+					<CardText>Venue:{this.state.Venue}</CardText>
+
+					<CardText>Kindly grant us permission for above mentioned session.</CardText>
+					<br/>
+
+					<CardText>Thank You</CardText>
+					<CardText>Team #include</CardText>
 
 				 
 
-				 
-			 </div>
+				 </div>
+				</Card>
+				</div>
 
 			 </div>
 

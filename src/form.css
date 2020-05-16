@@ -9,10 +9,10 @@ padding-left:15vw;
 }
 
 .preview{
-	width:50%;
-	padding:2vw;
-	margin:5vw;
-	border:2px solid;
+	width:90%;
+	padding:0 2vw;
+	color:white;
+	
 
 
 }
@@ -22,4 +22,11 @@ padding-left:15vw;
 	text-align: right;
 	padding:10vw;
 	margin-bottom: 12vw;
+}
+h3
+{
+	text-align:  center;
+}
+.light{
+	color:rgba(255,255,255,0.5);
 }
