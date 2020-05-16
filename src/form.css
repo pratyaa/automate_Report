@@ -1,0 +1,45 @@
+.top{
+
+margin:0vw 0vw ;
+background-color: #00e6e6
+}
+
+.sub_top{
+display:flex;
+margin:0 6vw;	
+}
+
+
+
+.preview{
+	width:90%;
+	padding:0 2vw;
+	color:white;
+	margin: 0 5vw;
+	
+
+
+}
+
+.card_style{
+	background-color: rgb(191, 191, 191,0.4);
+	padding:5vw;
+	margin-top: 4vw;
+	box-shadow: 2px 3px 10px;
+
+}
+.labels{
+	width:500px;
+	text-align: right;
+	padding:10vw;
+	margin-bottom: 12vw;
+}
+h3
+{
+	text-align:  center;
+	color:white;
+}
+.light{
+	color:#8c8c8c;
+	
+}
