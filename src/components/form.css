@@ -20,6 +20,7 @@ margin:0 6vw;
 	margin: 1vw 5vw;
 	background-color: white;
 
+
 }
 
 	
@@ -46,30 +47,38 @@ margin:0 6vw;
 }
 .second{
 	width:50%;
+	height: auto;
 	
 
 }
 p{
  line-height: 100%;
+ 
+  
 }
 .break{
 	line-height: 260%;
 	
 }
-.labels{
-	width:500px;
-	text-align: right;
-	padding:10vw;
-	margin-bottom: 12vw;
-}
+
 .header
 {
 	text-align:  center;
 	width:100%;
-
+  
 	
 }
 .light{
-	color:#ffb385;
+	color:blue;
+	
+}
+
+.headings{
+	font-size: 18px;
+    font-weight: 500;
+}
+span{
+	font-size: 16px;
+	font-weight: 400;
 	
 }

@@ -85,7 +85,7 @@ class Form extends Component {
 
                                     <Button   onClick={toPdf}
                                     variant="contained"
-                                    style={{ backgroundColor: "#00203f",color:"white"}}
+                                    style={{ backgroundColor: "#00203f",color:"white",marginBottom:"0.5vw"}}
                                     size="large" >
                                           Download
                                   </Button>

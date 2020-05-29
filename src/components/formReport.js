@@ -69,6 +69,7 @@ class Form extends Component {
                         <div className="first">
                             <form>
 
+
                             {(this.data).map((data) =>(
                                     data.type==="long"  ?
                                     <TextareaAutosize
@@ -85,7 +86,6 @@ class Form extends Component {
                                     type={data.type}
                                     InputLabelProps={{ shrink: true }}
                                     label={data.label}
-                                    variant="outlined"
                                     style={{marginBottom:"1vw"}}
                                 />
 
