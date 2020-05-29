@@ -9,7 +9,7 @@ import './form.css'
 
 const ref = React.createRef();
 
-class Form extends Component {
+class Form1 extends Component {
 
     constructor(props) {
         super(props);
