@@ -31,7 +31,7 @@ class Landing extends Component{
 							   <Card.Title>Report</Card.Title>
 							    <Link to="/report">
 							    <Button  size="lg" className="button">Create</Button>
-								</Link
+								</Link>
 							    </Card.Body>
 					   </Card>
 				   </Col>
