@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Row,Col,Container,Card,Button} from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 import './landing.css';
 
 
@@ -18,9 +18,9 @@ class Landing extends Component{
 					   <Card className="cards">
 						   <Card.Body>
 							   <Card.Title>Application</Card.Title>
-							 
+							    <Link to="/application">
 							    <Button size="lg" className="button" style={{hover:{backgroundColor:"white"}}} >Create</Button>
-							   
+							   	</Link>
 							    </Card.Body>
 					   </Card>
 				   </Col>
@@ -29,7 +29,9 @@ class Landing extends Component{
 					   <Card className="cards">
 						   <Card.Body>
 							   <Card.Title>Report</Card.Title>
+							    <Link to="/report">
 							    <Button  size="lg" className="button">Create</Button>
+								</Link
 							    </Card.Body>
 					   </Card>
 				   </Col>
