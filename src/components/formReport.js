@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import ReactToPdf from 'react-to-pdf';
-import './form.css'
+import './report.css'
 
 const ref = React.createRef();
 
@@ -41,7 +41,7 @@ class Form1 extends Component {
                 type:"text"},
                 {
                 label:"Statistics",
-                type:"long"
+                type:"text"
                 }
                 
             ];
@@ -71,14 +71,7 @@ class Form1 extends Component {
 
 
                             {(this.data).map((data) =>(
-                                    data.type==="long"  ?
-                                    <TextareaAutosize
-                                     onChange={this.handleChange}
-                                    name={data.label}
-                                    label={data.label}
-                                    rowsMin={3}
-
-                                    />   :
+                                   
                                     
                                     <TextField
                                     onChange={this.handleChange}
@@ -86,6 +79,7 @@ class Form1 extends Component {
                                     type={data.type}
                                     InputLabelProps={{ shrink: true }}
                                     label={data.label}
+                                    variant="outlined"
                                     style={{marginBottom:"1vw"}}
                                 />
 
@@ -93,7 +87,6 @@ class Form1 extends Component {
                                 
                                
                                     
-                                                            
                             </form>
                             <br/>
                             <ReactToPdf targetRef={ref} filename="application.pdf">
@@ -101,7 +94,7 @@ class Form1 extends Component {
 
                                     <Button   onClick={toPdf}
                                     variant="contained"
-                                    style={{ backgroundColor: "#00203f",color:"white"}}
+                                    style={{ backgroundColor: "#00203f",color:"white",marginBottom:"0.5vw"}}
                                     size="large" >
                                           Download
                                   </Button>

@@ -4,7 +4,7 @@ import {Card} from 'react-bootstrap';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import ReactToPdf from 'react-to-pdf';
-import './form.css'
+import './application.css'
 
 const ref = React.createRef();
 

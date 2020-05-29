@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './form.css'
+import './application.css'
 
 class Preview extends Component{
 
@@ -25,6 +25,7 @@ class Preview extends Component{
                                 <p className="break">
                                     Date: {this.props.data.Date === "Date"  ?
                                     <span className="light">{this.props.data.Date}</span> : <span>{this.props.data.Date}</span>}
+                
                                 </p>
                                 
                                 <p className="break">Subject: Permission for #include sessions</p>

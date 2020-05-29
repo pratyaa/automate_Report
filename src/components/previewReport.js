@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './form.css';
+import './report.css';
 
 import Typography from '@material-ui/core/Typography';
 
