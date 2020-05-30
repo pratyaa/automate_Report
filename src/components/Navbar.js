@@ -1,14 +1,20 @@
 import React from "react";
-import {Navbar, NavbarBrand} from "reactstrap";
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
-const Appbar = () => {
+const Navbar = () => {
     return (
         <div>
-            <Navbar style={{textAlign: "center", height: "65px",backgroundColor:"#00203f",color:"white",textAlign: "center"}}  dark expand="sm">
-                <NavbarBrand style={{fontSize: "40px"}}>Document Generator</NavbarBrand>
-            </Navbar>
+        <AppBar position="static">
+                <Toolbar style={{backgroundColor:"#00203f"}}>
+                <Typography variant="h3" >
+                  Document Generator
+                  </Typography>
+                  </Toolbar>
+      </AppBar>
         </div>
     );
 };
 
-export default Appbar;
+export default Navbar;

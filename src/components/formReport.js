@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import PreviewReport from './previewReport.js'
-import {Card} from 'react-bootstrap';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import ReactToPdf from 'react-to-pdf';
-import './report.css'
+import './static/report.css'
 
 const ref = React.createRef();
 
@@ -15,7 +13,7 @@ class Form1 extends Component {
         super(props);
 
         this.state = {
-           
+
             Topic: "Topic",
             Organised_on: "",
             Organised_at: "Organised_at",
@@ -43,10 +41,10 @@ class Form1 extends Component {
                 label:"Statistics",
                 type:"text"
                 }
-                
+
             ];
-    
-        
+
+
     }
 
      handleChange = (event) => {
@@ -57,22 +55,22 @@ class Form1 extends Component {
             this.setState({[labell]: labell})
         }
     }
-  
-    
+
+
 
     render() {
         return (
             <div className="top">
                 <div className="sub_top">
-               
-                   
+
+
                         <div className="first">
                             <form>
 
 
                             {(this.data).map((data) =>(
-                                   
-                                    
+
+
                                     <TextField
                                     onChange={this.handleChange}
                                     name={data.label}
@@ -84,9 +82,9 @@ class Form1 extends Component {
                                 />
 
                             ))}
-                                
-                               
-                                    
+
+
+
                             </form>
                             <br/>
                             <ReactToPdf targetRef={ref} filename="application.pdf">
@@ -102,14 +100,14 @@ class Form1 extends Component {
                             </ReactToPdf>
                             <br/>
                         </div>
-                      
+
                     <PreviewReport data={this.state}/>
-                      
+
                 </div>
-                    }
+
             </div>
         );
-    }   
+    }
 }
 
 export default Form1;

@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import Preview from './preview.js'
-import {Card} from 'react-bootstrap';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import ReactToPdf from 'react-to-pdf';
-import './application.css'
+import './static/application.css'
 
 const ref = React.createRef();
 
@@ -37,10 +36,10 @@ class Form extends Component {
                  {label:"Venue",
                 type:"text"},
             ];
-    
-        
+
+
     }
-   
+
 
      handleChange = (event) => {
         const labell = event.target.name;
@@ -50,15 +49,15 @@ class Form extends Component {
             this.setState({[labell]: labell})
         }
     }
-  
-    
+
+
 
     render() {
         return (
             <div className="top">
                 <div className="sub_top">
-               
-                   
+
+
                         <div className="first">
                             <form>
 
@@ -74,10 +73,10 @@ class Form extends Component {
                                 />
 
                             ))}
-                                
-                               
-                                    
-                                                            
+
+
+
+
                             </form>
                             <br/>
                             <ReactToPdf targetRef={ref} filename="application.pdf">
@@ -93,14 +92,14 @@ class Form extends Component {
                             </ReactToPdf>
                             <br/>
                         </div>
-                      
+
                     <Preview data={this.state}/>
-                      
+
                 </div>
-                    }
+
             </div>
         );
-    }   
+    }
 }
 
 export default Form;

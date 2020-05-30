@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
-import './application.css'
+import './static/application.css'
 
 class Preview extends Component{
 
 	constructor(props)
 	{
 		super(props);
-		
+
 	}
-    
+
 	render(){
-      
+
 		return(
 				  <div className="second">
-                           
+
                             <div className="preview" >
 
 
@@ -21,13 +21,13 @@ class Preview extends Component{
                                 <p>Head of Department</p>
                                 <p>Information Technology</p>
                                 <p>SGSITS,Indore</p>
-                                
+
                                 <p className="break">
                                     Date: {this.props.data.Date === "Date"  ?
                                     <span className="light">{this.props.data.Date}</span> : <span>{this.props.data.Date}</span>}
-                
+
                                 </p>
-                                
+
                                 <p className="break">Subject: Permission for #include sessions</p>
                                 <p>Respected Ma'am </p>
                                 <p>We at #include are planning a session for
@@ -72,16 +72,16 @@ class Preview extends Component{
                                <p>
                                     Kindly grant us permission for above mentioned session.
                                 </p>
-                                
+
                                 <p className="break" style={{marginBottom:"30px"}}>Thank You</p>
                                 <p>Team #include</p>
-                
-                                                     
-                               
-                                
-                                
+
+
+
+
+
                             </div>
-                       
+
                         </div>
 			);
 	}

@@ -1,21 +1,19 @@
 import React, {Component} from 'react';
-import './report.css';
-
-import Typography from '@material-ui/core/Typography';
+import './static/report.css';
 
 class PreviewReport extends Component{
 
 	constructor(props)
 	{
 		super(props);
-		
+
 	}
-    
+
 	render(){
-      
+
 		return(
 				  <div className="second">
-                           
+
                             <div className="preview" >
 
 
@@ -29,7 +27,7 @@ class PreviewReport extends Component{
                                 <p>Event Report By</p>
                                 <p>#include -SGSITS ,Indore</p>
                             </div>
-                                
+
                                <p className="headings">Organised On:
                                    {
                                         this.props.data.Organised_on === "Organised_on" ?
@@ -43,7 +41,7 @@ class PreviewReport extends Component{
                                             <span className="light"> {this.props.data.Organised_at}</span> :
                                             <span> {this.props.data.Organised_at}</span>
                                     }
-                                   
+
                                 </p>
                                <p className="headings" style={{marginTop:"3vw"}}>Aim of the session:</p>
                                 <p>{
@@ -52,16 +50,16 @@ class PreviewReport extends Component{
                                             <span> {this.props.data.Aim}</span>
                                     }
                                 </p>
-                                
+
                                  <p className="headings">Speaker:</p>
-                                 
+
                                 <p style={{minHeight:"50px"}}>{
                                         this.props.data.Speaker === "Speaker" ?
                                             <span className="light"> {this.props.data.Speaker}</span> :
                                             <span> {this.props.data.Speaker}</span>
                                     }
                                 </p>
-                               
+
                                  <p className="headings">About the Session:</p>
                                  <p style={{minHeight:"50px"}}>
                                 {
@@ -70,7 +68,7 @@ class PreviewReport extends Component{
                                             <span> {this.props.data.Description}</span>
                                     }
                                 </p>
-                                
+
                                  <p className="headings">Statistics:</p>
                                 <p style={{minHeight:"50px"}}>{
                                         this.props.data.Statistics === "Statistics" ?
@@ -78,16 +76,16 @@ class PreviewReport extends Component{
                                             <span> {this.props.data.Statistics}</span>
                                     }
                                 </p>
-                               
 
-                                
 
-                                
-                                
+
+
+
+
                             </div>
-                       
+
                         </div>
-                   
+
 			);
 	}
 }

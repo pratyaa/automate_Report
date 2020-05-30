@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Row,Col,Container,Card,Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './landing.css';
+import './static/landing.css';
 
 
 class Landing extends Component{
@@ -12,8 +12,8 @@ class Landing extends Component{
 
 				<Container>
 				<Row>
-				
-						  
+
+
 				   <Col md={4} xs={11} sm={6}>
 					   <Card className="cards">
 						   <Card.Body>
@@ -37,7 +37,7 @@ class Landing extends Component{
 				   </Col>
 
 
-				  
+
 				 </Row>
 				 </Container>
 			)
