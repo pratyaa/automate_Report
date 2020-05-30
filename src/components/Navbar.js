@@ -7,7 +7,8 @@ const Navbar = () => {
     return (
         <div>
         <AppBar position="static">
-                <Toolbar style={{backgroundColor:"#00203f"}}>
+                <Toolbar style={{backgroundColor:"#00203f",textAlign:"center"}}>
+                <img src="static/docLogo.png"  alt="logo"/>
                 <Typography variant="h3" >
                   Document Generator
                   </Typography>

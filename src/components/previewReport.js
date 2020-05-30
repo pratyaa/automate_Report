@@ -3,12 +3,7 @@ import './static/report.css';
 
 class PreviewReport extends Component{
 
-	constructor(props)
-	{
-		super(props);
-
-	}
-
+	
 	render(){
 
 		return(

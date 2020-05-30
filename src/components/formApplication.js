@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Preview from './preview.js'
+import Preview from './previewApplication.js'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import ReactToPdf from 'react-to-pdf';
@@ -23,18 +23,19 @@ class Form extends Component {
          this.data=[
 
                 {label:"Date",
-                type:"date"}
+                type:"date"
+                 ,id:1}
                 ,
                 {label:"Audience",
-                type:"text"},
+                type:"text",id:2},
                  {label:"Topic",
-                type:"text"},
+                type:"text",id:3},
                  {label:"Date_of_event",
-                type:"text"},
+                type:"text",id:4},
                  {label:"Time",
-                type:"text"},
+                type:"text",id:5},
                  {label:"Venue",
-                type:"text"},
+                type:"text",id:6},
             ];
 
 
@@ -62,10 +63,11 @@ class Form extends Component {
                             <form>
 
                             {(this.data).map((data) =>(
-                                    <TextField
+                                    <TextField key={data.id}
                                     onChange={this.handleChange}
                                     name={data.label}
                                     type={data.type}
+                                     fullWidth
                                     InputLabelProps={{ shrink: true }}
                                     label={data.label}
                                     variant="outlined"

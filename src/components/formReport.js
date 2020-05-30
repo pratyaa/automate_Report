@@ -75,6 +75,7 @@ class Form1 extends Component {
                                     onChange={this.handleChange}
                                     name={data.label}
                                     type={data.type}
+                                     fullWidth
                                     InputLabelProps={{ shrink: true }}
                                     label={data.label}
                                     variant="outlined"
