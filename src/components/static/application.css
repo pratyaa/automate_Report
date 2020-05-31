@@ -18,10 +18,7 @@ margin:0 6vw;
 	padding:0.1vw 2vw;
 	color:black;
 	margin: 1vw 5vw;
-	background-color: white;
-
-
-}
+	background-color: white;}
 
 
 .first{
@@ -62,3 +59,12 @@ p{
 	
 }
 
+@media only screen and (max-width: 800px) {
+ .first{
+ 	width:550px;
+ 	background-color: blue;
+ }
+ .second{
+ 	width:550px;
+ }
+}
