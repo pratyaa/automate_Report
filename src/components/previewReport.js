@@ -3,7 +3,7 @@ import './static/report.css';
 
 class PreviewReport extends Component{
 
-	
+
 	render(){
 
 		return(
@@ -13,7 +13,7 @@ class PreviewReport extends Component{
 
 
 
-                             <div className="head" style={{textAlign:"center",marginTop:"1vw"}}>
+                             <div className="head" style={{textAlign:"center",marginTop:"1vw",fontWeight:"500"}}>
 
                                 <p >
                                      {this.props.data.Topic=== "Topic"  ?
