@@ -69,7 +69,7 @@ class Preview extends Component{
                                     Kindly grant us permission for above mentioned session.
                                 </p>
 
-                                <p className="break" style={{marginBottom:"30px"}}>Thank You</p>
+                                <p className="break" >Thank You</p>
                                 <p>Team #include</p>
 
 
