@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import Preview from './previewApplication.js'
+import Pdf from './downloadApplication.js';
+import Preview from './previewApplication';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import ReactToPdf from 'react-to-pdf';
-import './static/application.css'
-
-const ref = React.createRef();
+import './static/application.css';
+import { PDFDownloadLink} from '@react-pdf/renderer'
 
 class Form extends Component {
 
@@ -45,7 +44,7 @@ class Form extends Component {
      handleChange = (event) => {
         const labell = event.target.name;
         if (event.target.value) {
-            this.setState({[labell]: event.target.value});
+            this.setState({[labell]: " "+event.target.value});
         } else {
             this.setState({[labell]: labell})
         }
@@ -81,21 +80,18 @@ class Form extends Component {
 
                             </form>
                             <br/>
-                            <ReactToPdf targetRef={ref} filename="application.pdf">
-                                {({toPdf}) => (
+                            <Button
+                            variant="contained"
+                            style={{ backgroundColor: "#00203f",color:"white",marginBottom:"0.5vw"}}
+                            size="large" >
 
-                                    <Button   onClick={toPdf}
-                                    variant="contained"
-                                    style={{ backgroundColor: "#00203f",color:"white",marginBottom:"0.5vw"}}
-                                    size="large" >
-                                          Download
-                                  </Button>
-                                       )}
-                            </ReactToPdf>
+                            <PDFDownloadLink document={<Pdf data={this.state}/>} fileName="application.pdf">
+                                  {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
+                            </PDFDownloadLink>
+                            </Button>
                             <br/>
                         </div>
-
-                    <Preview data={this.state}/>
+                         <Preview data={this.state}/>
 
                 </div>
 
