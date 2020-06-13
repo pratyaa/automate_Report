@@ -4,7 +4,7 @@ import Pdf from './downloadReport.js';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import { PDFDownloadLink} from '@react-pdf/renderer'
-import './static/report.css';
+import './static/form.css';
 import { Row,Col,Container} from 'react-bootstrap';
 
 
@@ -88,11 +88,11 @@ class Form1 extends Component {
                                 <br/>
                                 <Button
                                 variant="contained"
-                                style={{ backgroundColor: "#00203f",color:"white",marginBottom:"0.5vw"}}
+                                style={{ backgroundColor: "#00203f",marginBottom:"0.5vw",borderRadius: "8px"}}
                                 size="large" >
 
                                 <PDFDownloadLink document={<Pdf data={this.state}/>} fileName="report.pdf">
-                                      {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
+                                      {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now')}
                                 </PDFDownloadLink>
                                 </Button>
                                 <br/>

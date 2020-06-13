@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './static/application.css'
 import { Page, Text, Document} from '@react-pdf/renderer';
 class Pdf extends Component{
 

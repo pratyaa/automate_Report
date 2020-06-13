@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './static/report.css';
+import './static/form.css';
 
 class PreviewReport extends Component{
 
