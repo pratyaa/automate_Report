@@ -45,7 +45,7 @@ class Preview extends Component{
                                     Date:
                                     {
                                         this.props.data.Date_of_event === "Date_of_event" ?
-                                            <span className="light"> {this.props.data.Date_of_event}</span> :
+                                            <span className="light"> {this.props.data.Date_of_event.split("_").join(" ")}</span> :
                                             <span> {this.props.data.Date_of_event}</span>
                                     }
                                 </p>

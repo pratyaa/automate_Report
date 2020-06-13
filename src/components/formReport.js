@@ -18,7 +18,8 @@ class Form1 extends Component {
             Topic: "Topic",
             Organised_on: "",
             Organised_at: "Organised_at",
-            Aim: "Aim",
+            Organised_for:"Organised_for",
+            Details_of_topic:"Details_of_topic",
             Speaker:"Speaker",
             Description:"Description",
             Statistics:"Statistics"
@@ -28,19 +29,26 @@ class Form1 extends Component {
                 {label:"Topic",
                 type:"text",id:1}
                 ,
-                {label:"Oraganised_on",
+                {label:"Organised_on",
                 type:"date",id:2},
+
                  {label:"Organised_at",
                 type:"text",id:3},
-                 {label:"Aim",
+
+                {label:"Organised_for",
                 type:"text",id:4},
-                 {label:"Speaker",
+                
+                 {label:"Details_of_topic",
                 type:"text",id:5},
-                 {label:"Description",
+
+                 {label:"Speaker",
                 type:"text",id:6},
-                {
-                label:"Statistics",
-                type:"text",id:7
+
+                 {label:"Description",
+                type:"text",id:7},
+                
+                {label:"Statistics",
+                type:"text",id:8
                 }
 
             ];
@@ -76,7 +84,7 @@ class Form1 extends Component {
                                         type={data.type}
                                          fullWidth
                                         InputLabelProps={{ shrink: true }}
-                                        label={data.label}
+                                        label={(data.label.split("_")).join(" ")}
                                         variant="outlined"
                                         style={{marginBottom:"1vw"}}
                                     />
@@ -88,7 +96,7 @@ class Form1 extends Component {
                                 <br/>
                                 <Button
                                 variant="contained"
-                                style={{ backgroundColor: "#00203f",marginBottom:"0.5vw",borderRadius: "8px"}}
+                                style={{ backgroundColor: "#00203f",marginBottom:"0.5vw",}}
                                 size="large" >
 
                                 <PDFDownloadLink document={<Pdf data={this.state}/>} fileName="report.pdf">

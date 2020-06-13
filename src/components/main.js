@@ -65,7 +65,7 @@ export default function CenteredTabs() {
           <Tab label="Report" {...a11yProps(1)} />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
+      <TabPanel value={value} index={0} >
         <Form/>
       </TabPanel>
       <TabPanel value={value} index={1}>

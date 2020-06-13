@@ -70,7 +70,7 @@ class Form extends Component {
                                     type={data.type}
                                      fullWidth
                                     InputLabelProps={{ shrink: true }}
-                                    label={data.label}
+                                    label={(data.label.split("_")).join(" ")}
                                     variant="outlined"
                                     style={{marginBottom:"1vw"}}
                                 />
@@ -84,7 +84,7 @@ class Form extends Component {
                             <br/>
                             <Button
                             variant="contained"
-                            style={{ backgroundColor: "#00203f",marginBottom:"0.5vw",borderRadius: "8px"}}
+                            style={{ backgroundColor: "#00203f",marginBottom:"0.5vw",}}
                             size="large" >
 
                             <PDFDownloadLink document={<Pdf data={this.state}/>} fileName="application.pdf">
