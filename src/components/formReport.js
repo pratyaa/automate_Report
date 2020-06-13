@@ -4,7 +4,8 @@ import Pdf from './downloadReport.js';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import { PDFDownloadLink} from '@react-pdf/renderer'
-import './static/report.css'
+import './static/report.css';
+import { Row,Col,Container} from 'react-bootstrap';
 
 
 class Form1 extends Component {
@@ -60,52 +61,53 @@ class Form1 extends Component {
 
     render() {
         return (
-            <div className="top">
-                <div className="sub_top">
-
-
+            <Container fluid>
+                <Row className="justify-content-md-center">
+                    <Col sm={9}  md={8} lg={3} xs={11}>
                         <div className="first">
-                            <form>
+                                <form>
+
+                                {(this.data).map((data) =>(
 
 
-                            {(this.data).map((data) =>(
+                                        <TextField key={data.id}
+                                        onChange={this.handleChange}
+                                        name={data.label}
+                                        type={data.type}
+                                         fullWidth
+                                        InputLabelProps={{ shrink: true }}
+                                        label={data.label}
+                                        variant="outlined"
+                                        style={{marginBottom:"1vw"}}
+                                    />
+
+                                ))}
 
 
-                                    <TextField key={data.id}
-                                    onChange={this.handleChange}
-                                    name={data.label}
-                                    type={data.type}
-                                     fullWidth
-                                    InputLabelProps={{ shrink: true }}
-                                    label={data.label}
-                                    variant="outlined"
-                                    style={{marginBottom:"1vw"}}
-                                />
+                                </form>
+                                <br/>
+                                <Button
+                                variant="contained"
+                                style={{ backgroundColor: "#00203f",color:"white",marginBottom:"0.5vw"}}
+                                size="large" >
 
-                            ))}
-
-
-
-                            </form>
-                            <br/>
-                            <Button
-                            variant="contained"
-                            style={{ backgroundColor: "#00203f",color:"white",marginBottom:"0.5vw"}}
-                            size="large" >
-
-                            <PDFDownloadLink document={<Pdf data={this.state}/>} fileName="report.pdf">
-                                  {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
-                            </PDFDownloadLink>
-                            </Button>
-                            <br/>
+                                <PDFDownloadLink document={<Pdf data={this.state}/>} fileName="report.pdf">
+                                      {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
+                                </PDFDownloadLink>
+                                </Button>
+                                <br/>
                         </div>
+                            
+                    </Col>
 
-                    <PreviewReport data={this.state}/>
+                    <Col sm={11} md={8} lg={7}  xs={12}>
+                     <PreviewReport data={this.state}/>
+                    </Col>
 
-                </div>
-
-            </div>
-        );
+                </Row>
+            </Container>
+            )
+              
     }
 }
 

@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import './static/application.css';
 import { PDFDownloadLink} from '@react-pdf/renderer'
+import { Row,Col,Container} from 'react-bootstrap';
 
 class Form extends Component {
 
@@ -54,9 +55,10 @@ class Form extends Component {
 
     render() {
         return (
-            <div className="top">
-                <div className="sub_top">
-
+         
+            <Container fluid>
+                <Row className="justify-content-md-center">
+                    <Col sm={11} md={8} lg={3}  xs={10}>
 
                         <div className="first">
                             <form>
@@ -91,11 +93,14 @@ class Form extends Component {
                             </Button>
                             <br/>
                         </div>
+                    </Col>
+                    <Col sm={11} md={8} lg={7}  xs={12}>
                          <Preview data={this.state}/>
+                    </Col>
+                </Row>
+            </Container>
 
-                </div>
-
-            </div>
+               
         );
     }
 }

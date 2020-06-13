@@ -8,8 +8,8 @@ const Navbar = () => {
         <div>
         <AppBar position="static">
                 <Toolbar style={{backgroundColor:"#00203f",textAlign:"center"}}>
-                <img style={{width: '40px', height: '40px'}} src={require('./static/docLogo.png')}  alt="logo"/>
-                <Typography variant="h3" >
+                <img style={{width: '40px', height: '40px'}} src={require('./static/logo.svg')}  alt="logo"/>
+                <Typography variant="h4" >
                   Document Generator
                   </Typography>
                   </Toolbar>
