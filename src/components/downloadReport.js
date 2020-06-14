@@ -37,9 +37,14 @@ class Pdf extends Component{
                              Aim of the session:
                           </Text>
 													<Text style={{marginBottom: 24}}>
+                            The session was organised for
                             {
-                                  this.props.data.Aim
+                                  this.props.data.Organised_for
                               }
+                            to introduce them to
+                            {
+                                  this.props.data.Details_of_topic
+                            }
                           </Text>
 													<Text style={{marginBottom: 12}}>
                              Speaker:

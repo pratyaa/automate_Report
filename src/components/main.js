@@ -60,7 +60,7 @@ export default function CenteredTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
+        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered style={{backgroundColor:"black", opacity:"0.4"}}>
           <Tab label="Application" {...a11yProps(0)} />
           <Tab label="Report" {...a11yProps(1)} />
         </Tabs>

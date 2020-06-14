@@ -45,7 +45,7 @@ class Form extends Component {
      handleChange = (event) => {
         const labell = event.target.name;
         if (event.target.value) {
-            this.setState({[labell]: " "+event.target.value});
+            this.setState({[labell]: " " + event.target.value + " "});
         } else {
             this.setState({[labell]: labell})
         }
