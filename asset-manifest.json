@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/automate_Report/static/css/main.b295243d.chunk.css",
+    "main.js": "/automate_Report/static/js/main.9faaf290.chunk.js",
+    "main.js.map": "/automate_Report/static/js/main.9faaf290.chunk.js.map",
+    "runtime-main.js": "/automate_Report/static/js/runtime-main.f32ae0ae.js",
+    "runtime-main.js.map": "/automate_Report/static/js/runtime-main.f32ae0ae.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/automate_Report/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.cea8e20d.chunk.js": "/automate_Report/static/js/2.cea8e20d.chunk.js",
+    "static/js/2.cea8e20d.chunk.js.map": "/automate_Report/static/js/2.cea8e20d.chunk.js.map",
+    "index.html": "/automate_Report/index.html",
+    "precache-manifest.83fa52f7d342d26250b2b221e827c97f.js": "/automate_Report/precache-manifest.83fa52f7d342d26250b2b221e827c97f.js",
+    "service-worker.js": "/automate_Report/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/automate_Report/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.b295243d.chunk.css.map": "/automate_Report/static/css/main.b295243d.chunk.css.map",
+    "static/js/2.cea8e20d.chunk.js.LICENSE.txt": "/automate_Report/static/js/2.cea8e20d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/automate_Report/static/media/logo.e5325eb2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f32ae0ae.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.cea8e20d.chunk.js",
+    "static/css/main.b295243d.chunk.css",
+    "static/js/main.9faaf290.chunk.js"
+  ]
+}
