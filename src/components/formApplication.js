@@ -31,7 +31,7 @@ class Form extends Component {
                  {label:"Topic",
                 type:"text",id:3},
                  {label:"Date_of_event",
-                type:"text",id:4},
+                type:"date",id:4},
                  {label:"Time",
                 type:"text",id:5},
                  {label:"Venue",

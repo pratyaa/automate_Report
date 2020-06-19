@@ -21,6 +21,7 @@ class Form1 extends Component {
             Organised_for:"Organised_for",
             Details_of_topic:"Details_of_topic",
             Speaker:"Speaker",
+            Duration_of_session:"Duration_of_session",
             Description:"Description",
             Statistics:"Statistics"
         };
@@ -44,11 +45,14 @@ class Form1 extends Component {
                  {label:"Speaker",
                 type:"text",id:6},
 
-                 {label:"Description",
+                 {label:"Duration_of_session",
                 type:"text",id:7},
+
+                 {label:"Description",
+                type:"text",id:8},
                 
                 {label:"Statistics",
-                type:"text",id:8
+                type:"text",id:9
                 }
 
             ];

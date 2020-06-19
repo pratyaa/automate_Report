@@ -64,12 +64,18 @@ class PreviewReport extends Component{
                                 </p>
 
                                  <p className="headings">About the Session:</p>
-                                 <p style={{minHeight:"50px"}}>
+                                  <p style={{minHeight:"50px"}}>
+                                 The {
+                                        this.props.data.Duration_of_session === "Duration_of_session" ?
+                                            <span className="light"> {this.props.data.Duration_of_session.split("_").join(" ")}</span> :
+                                            <span> {this.props.data.Duration_of_session}</span>
+                                }  hour long session focused on 
+                                
                                 {
                                         this.props.data.Description === "Description" ?
                                             <span className="light"> {this.props.data.Description.split("_").join(" ")}</span> :
                                             <span> {this.props.data.Description}</span>
-                                    }
+                                }
                                 </p>
 
                                  <p className="headings">Statistics:</p>
