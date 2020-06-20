@@ -14,11 +14,11 @@ class Form extends Component {
 
         this.state = {
             Date: "",
-            Audience: "Audience",
-            Topic: "Topic",
+            Audience: " Audience ",
+            Topic: " Topic ",
             Date_of_event: "",
-            Time: "Time",
-            Venue: "Venue"
+            Time: " Time ",
+            Venue: " Venue "
         };
          this.data=[
 

@@ -16,7 +16,7 @@ class PreviewReport extends Component{
                              <div className="head" style={{textAlign:"center",marginTop:"1vw",fontWeight:"500"}}>
 
                                 <p >
-                                     {this.props.data.Topic=== "Topic"  ?
+                                     {this.props.data.Topic=== " Topic "  ?
                                     <span className="light" style={{fontSize:"32px"}}>{this.props.data.Topic}</span> : <span style={{fontSize:"32px"}}>{this.props.data.Topic}</span>}
                                 </p>
                                 <p>Event Report By</p>
@@ -25,14 +25,14 @@ class PreviewReport extends Component{
 
                                <p className="headings">Organised On:
                                    {
-                                        this.props.data.Organised_on === "Organised_on" ?
+                                        this.props.data.Organised_on === " Organised_on " ?
                                             <span className="light" > {this.props.data.Organised_on.split("_").join(" ")}</span> :
                                             <span > {this.props.data.Organised_on}</span>
                                     }
                                  </p>
                                  <p className="headings">Oraganised at:
                                    {
-                                        this.props.data.Organised_at === "Organised_at" ?
+                                        this.props.data.Organised_at === " Organised_at " ?
                                             <span className="light"> {this.props.data.Organised_at.split("_").join(" ")}</span> :
                                             <span> {this.props.data.Organised_at}</span>
                                     }
@@ -41,13 +41,13 @@ class PreviewReport extends Component{
                                <p className="headings" style={{marginTop:"2vw"}}>Aim of the session:</p>
                                 <p> The session was organised for 
                                  {
-                                    this.props.data.Organised_for === "Organised_for" ?
-                                            <span className="light"> { this.props.data.Organised_for.split("_").join(" ") } </span> :
-                                            <span> { this.props.data.Organised_for } </span>
+                                    this.props.data.Audience === " Audience " ?
+                                            <span className="light"> { this.props.data.Audience.split("_").join(" ") } </span> :
+                                            <span> { this.props.data.Audience } </span>
                                   } 
 
                                    to introduce them to  
-                                  { this.props.data.Details_of_topic === "Details_of_topic" ?
+                                  { this.props.data.Details_of_topic === " Details_of_topic " ?
                                             <span className="light"> {this.props.data.Details_of_topic.split("_").join(" ") } </span> :
                                             <span> {this.props.data.Details_of_topic }</span>
                                    }
@@ -57,7 +57,7 @@ class PreviewReport extends Component{
                                  <p className="headings">Speaker:</p>
 
                                 <p style={{minHeight:"50px"}}>{
-                                        this.props.data.Speaker === "Speaker" ?
+                                        this.props.data.Speaker === " Speaker " ?
                                             <span className="light"> {this.props.data.Speaker.split("_").join(" ")}</span> :
                                             <span> {this.props.data.Speaker}</span>
                                     }
@@ -66,24 +66,26 @@ class PreviewReport extends Component{
                                  <p className="headings">About the Session:</p>
                                   <p style={{minHeight:"50px"}}>
                                  The {
-                                        this.props.data.Duration_of_session === "Duration_of_session" ?
+                                        this.props.data.Duration_of_session === " Duration_of_session " ?
                                             <span className="light"> {this.props.data.Duration_of_session.split("_").join(" ")}</span> :
                                             <span> {this.props.data.Duration_of_session}</span>
                                 }  hour long session focused on 
                                 
                                 {
-                                        this.props.data.Description === "Description" ?
+                                        this.props.data.Description === " Description " ?
                                             <span className="light"> {this.props.data.Description.split("_").join(" ")}</span> :
                                             <span> {this.props.data.Description}</span>
                                 }
                                 </p>
 
                                  <p className="headings">Statistics:</p>
-                                <p style={{minHeight:"50px"}}>{
-                                        this.props.data.Statistics === "Statistics" ?
+                                <p style={{minHeight:"50px"}}>
+                                    The session was a success with
+                                    {
+                                        this.props.data.Statistics === " Statistics " ?
                                             <span className="light"> {this.props.data.Statistics.split("_").join(" ")}</span> :
                                             <span> {this.props.data.Statistics}</span>
-                                    }
+                                    }  attending it.
                                 </p>
 
 
