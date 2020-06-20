@@ -15,15 +15,15 @@ class Form1 extends Component {
 
         this.state = {
 
-            Topic: "Topic",
+            Topic: " Topic ",
             Organised_on: "",
-            Organised_at: "Organised_at",
-            Organised_for:"Organised_for",
-            Details_of_topic:"Details_of_topic",
-            Speaker:"Speaker",
-            Duration_of_session:"Duration_of_session",
-            Description:"Description",
-            Statistics:"Statistics"
+            Organised_at: " Organised_at ",
+            Audience:" Audience ",
+            Details_of_topic:" Details_of_topic ",
+            Speaker:" Speaker ",
+            Duration_of_session:" Duration_of_session ",
+            Description:" Description ",
+            Statistics:" Statistics "
         };
          this.data=[
 
@@ -36,7 +36,7 @@ class Form1 extends Component {
                  {label:"Organised_at",
                 type:"text",id:3},
 
-                {label:"Organised_for",
+                {label:"Audience",
                 type:"text",id:4},
                 
                  {label:"Details_of_topic",
