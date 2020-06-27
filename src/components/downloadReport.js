@@ -39,7 +39,7 @@ class Pdf extends Component{
 													<Text style={{marginBottom: 24}}>
                             The session was organised for
                             {
-                                  this.props.data.Organised_for
+                                  this.props.data.Audience
                               }
                             to introduce them to
                             {
@@ -58,6 +58,11 @@ class Pdf extends Component{
                              About the Session:
                           </Text>
 													<Text style={{marginBottom: 24}}>
+                            The
+                            {
+                              this.props.data.Duration_of_session
+                            }
+                            hour long session focused on
                             {
                                  this.props.data.Description
                              }
@@ -66,9 +71,11 @@ class Pdf extends Component{
                             Statistics:
                           </Text>
 													<Text style={{marginBottom: 24}}>
+                          The session was a success with
                             {
                                   this.props.data.Statistics
                               }
+                              attending it.
                           </Text>
 
                           </Page>

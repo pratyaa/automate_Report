@@ -28,13 +28,13 @@ class Preview extends Component{
                                 <p>Respected Ma'am </p>
                                 <p>We at #include are planning a session for
                                     {
-                                        this.props.data.Audience === "Audience" ?
+                                        this.props.data.Audience === " Audience " ?
                                             <span className="light"> {this.props.data.Audience}</span> :
                                             <span> {this.props.data.Audience}</span>
                                     }
                                     . The session will be based on
                                     {
-                                        this.props.data.Topic === "Topic" ?
+                                        this.props.data.Topic === " Topic " ?
                                             <span className="light"> {this.props.data.Topic}</span> :
                                             <span> {this.props.data.Topic}</span>
                                     }
@@ -52,7 +52,7 @@ class Preview extends Component{
                                 <p>
                                     Time:
                                     {
-                                        this.props.data.Time === "Time" ?
+                                        this.props.data.Time === " Time " ?
                                             <span className="light"> {this.props.data.Time}</span> :
                                             <span> {this.props.data.Time}</span>
                                     }
@@ -60,7 +60,7 @@ class Preview extends Component{
                                 <p>
                                     Venue:
                                     {
-                                        this.props.data.Venue === "Venue" ?
+                                        this.props.data.Venue === " Venue " ?
                                             <span className="light"> {this.props.data.Venue}</span> :
                                             <span> {this.props.data.Venue}</span>
                                     }
