@@ -2,13 +2,15 @@ import React from 'react';
 import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
 import Main from "./components/main.js";
+import Automate from './components/static/automatic.js'
 
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
+    <Automate/>
+     {/* <Navbar />
       <Main/>
-      <Footer />
+      <Footer />*/}
 
     </React.Fragment>
   );
